@@ -1,9 +1,33 @@
+# Link
+[vercel app](https://keyboard-trainer-xi.vercel.app/)
+
 # React + TypeScript + Vite
+## How to build
+- clone repo
+```bash
+  git clone https://github.com/ioioio45/keyboard-trainer
+  cd keyboard-trainer
+```
+- install dependencies
+```bash
+  npm install
+  # or
+  yarn dev
+```
+- run project
+```bash
+  npm run dev
+  #or
+  yarn dev
+```
+- build
+```bash
+  npm run build
+  # or
+  yarn build
+```
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
+some external plugins for vite
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
