@@ -1,0 +1,138 @@
+.section-card {
+  width: 90vw;
+  max-width: 1200px; 
+  height: auto; 
+  min-height: 80vh;
+  background-color: #d2ccbc;
+  margin: auto;
+  margin-top: 5vh;
+  border: 2px solid #7e6b3d;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+.key-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 10px 0;
+}
+.key-div {
+  flex: 0 0 auto;
+  width: calc(25px + 2vw);
+  height: calc(25px + 2vw);
+  line-height: 1.2;
+  font-size: clamp(1rem, 2vw, 2rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: #7e6b3d;
+  border: 2px solid #7e6b3d;
+  background-color: white;
+}
+.reader-div {
+  width: 100%;
+  max-width: 90%;
+  margin: 1rem auto;
+  text-align:justify;
+  border: 2px dotted #7e6b3d;
+  padding: 1rem;
+}
+.text-area {
+  display: inline-block;
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  position: relative;
+}
+.correct {
+  color: green;
+}
+.incorrect {
+  color: red;
+}
+.current {
+  color: black;
+}
+.button {
+  display: block;
+  margin: 1rem auto;
+  padding: 1rem 2rem;
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  border: 2px solid #7e6b3d;
+}
+.credits {
+  width: 50vw;
+  height: 50vh;
+  background-color: blue;
+  position: absolute;
+  left: 50vw;
+  border-radius: 2rem;
+}
+.cursor {
+  position: absolute;
+  height: clamp(1rem, 2vw, 2rem);;
+  width: 2px;
+  background-color: black;
+  animation: blink 1s infinite;
+  transform: translateY(2px);
+  margin-left: -1px;
+}
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+.stats {
+  margin-left: 5rem;
+  font-size: clamp(1rem, 3vw, 1.5rem);
+}
+.rows {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .section-card {
+    width: 95vw;
+    margin-top: 10px;
+    padding: 0.5rem;
+  }
+
+  .reader-div {
+    margin: 0.5rem auto;
+    padding: 0.5rem;
+  }
+
+  .text-area {
+    font-size: 1.2rem;
+  }
+
+  .key-div {
+    width: 40px;
+    height: 40px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-area {
+    font-size: 1rem;
+  }
+
+  .key-div {
+    width: 30px;
+    height: 30px;
+    font-size: 0.7rem;
+  }
+
+  .button {
+    font-size: 0.9rem;
+  }
+}
